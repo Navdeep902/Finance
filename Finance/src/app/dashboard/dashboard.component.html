@@ -1,0 +1,74 @@
+<div style="text-align: center; padding: 10px;">DASHBOARD</div>
+    <div style="width: 400px;" class="card">
+        <div class="card-body">
+            <h5 style="text-align: right; color: red;" class="card-title">LFI</h5>
+            Card Number: {{emicard.Card_Number}}<br>
+            Name: {{emicard.username}}<br>
+            Valid till: {{emicard.valid | date:'MM/yy' }}<br>
+            CARD TYPE: <span *ngIf="emicard.Card_Type; else elseBlock">Titanium</span><ng-template #elseBlock>Gold</ng-template><br>
+        </div>
+        <div style="text-align: center;" class="card-footer text-success">ACTIVATED</div>    
+</div>  
+<br><br>
+TOTAL CREDIT: <span *ngIf="emicard.Card_Type; else gold">80,000</span><ng-template #gold>50,000</ng-template><br>
+CREDIT USED:<br>
+REMAINING CREDIT:<br>
+<div style="text-align: center; padding: 10px;">PRODUCTS PURCHASED</div>
+<br>
+<table>
+    <tr>
+        <td>PRODUCT NAME: XYZ <td>
+        <td>AMOUNT:</td>   
+    </tr>
+    <tr>
+        <td>PAID: 15,000<td>  
+    </tr> 
+    <tr>
+        <td>BALANCE:</td>    
+    </tr>  
+</table>
+<br><br>
+RECENT TRANSACTIONS<br><br>
+<div class="card">
+    <div class="card-header">
+        <div class="row">
+            <div class="col-sm">
+                PRODUCT
+            </div>
+            <div class="col-sm">
+                DATE
+            </div>
+            <div class="col-sm">
+                AMOUNT PAID
+            </div>
+        </div>
+    </div>   
+    <div class="card-body">
+        <div *ngFor="let t of transactions">
+            <div class="row">
+                <div class="col-sm">
+                    {{t.Name}}
+                </div>
+                <div class="col-sm">
+                    {{t.Date}}
+                </div>
+                <div class="col-sm">
+                    {{t.Amount_Paid}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<div  style="margin: 0 auto; float: none; width: 800px;" class="card">
+    <div class="card-header">
+        <span style="padding-right: 270px;">PRODUCT</span>
+        <span style="padding-right: 270px;">DATE</span>
+        AMOUNT PAID
+    </div>   
+    <div class="card-body">
+
+    </div>
+</div>
+-->
+
