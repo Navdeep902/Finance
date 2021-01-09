@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a1198787ff12425bbf53c328959b83f9" Name="Diagram1">
+        <EntityTypeShape EntityType="dbfinanceModel.Admin" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbfinanceModel.BankDetails" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbfinanceModel.Card" Width="1.5" PointX="3" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbfinanceModel.Cart" Width="1.5" PointX="7.5" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbfinanceModel.EMICard" Width="1.5" PointX="5.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbfinanceModel.Products" Width="1.5" PointX="5.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbfinanceModel.Register" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbfinanceModel.Transactions" Width="1.5" PointX="9.625" PointY="3.875" IsExpanded="true" />
+        <AssociationConnector Association="dbfinanceModel.FK__EMICard__admin_u__35BCFE0A" ManuallyRouted="false" />
+        <AssociationConnector Association="dbfinanceModel.FK__Register__Accoun__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="dbfinanceModel.FK__EMICard__Card_Ty__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbfinanceModel.FK__Cart__Card_Numbe__10566F31" ManuallyRouted="false" />
+        <AssociationConnector Association="dbfinanceModel.FK__Cart__Product_ID__114A936A" ManuallyRouted="false" />
+        <AssociationConnector Association="dbfinanceModel.FK__EMICard__usernam__33D4B598" ManuallyRouted="false" />
+        <AssociationConnector Association="dbfinanceModel.FK__Transacti__Card___09A971A2" ManuallyRouted="false" />
+        <AssociationConnector Association="dbfinanceModel.FK__Transacti__Produ__08B54D69" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
