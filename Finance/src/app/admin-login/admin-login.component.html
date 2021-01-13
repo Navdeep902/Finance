@@ -1,5 +1,5 @@
-<div style="margin-top: 30px; margin-bottom: 150px; width: 600px;" class="card">
-    <div class="card-header">Login</div>
+<div style="margin-top: 30px; width: 600px;" class="card">
+    <div class="card-header">Admin Login</div>
     <div class="card-body">
         <form #f="ngForm" (ngSubmit)="onSubmit(f)">
             <div class="form-group">
@@ -12,13 +12,7 @@
                 <input type="password" name="password" ngModel required #password="ngModel" class="form-control"
                     id="password" placeholder="Password">
             </div>
-            <div class="form-group form-check">
-                <a [routerLink]="['/resetpassword']">Forgot Password?</a>
-            </div>
             <button type="submit" [disabled]="f.invalid" class="btn btn-primary">Login </button>
-            <p>Not a member?
-                <a [routerLink]="['/register']">Register</a>
-            </p>
         </form>
     </div>
 </div>
